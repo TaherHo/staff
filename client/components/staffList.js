@@ -1,9 +1,10 @@
 import React from 'react';
+import StaffDetails from './staffDetails';
 
 const StaffList = () =>{
     return(
         <div>
-            from our staffList Component
+            <StaffDetails/>
         </div>
     );
 };
