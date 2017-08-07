@@ -1,9 +1,12 @@
 import React from 'react';
 import reactDOM from 'react-dom';
+import StaffList from './components/staffList';
 
 const App = () => {
     return(
-        <div>from our app</div>
+        <div>
+            <StaffList/>
+        </div>
     )
 };
 
