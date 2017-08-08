@@ -7,12 +7,12 @@ const StaffList = (props) =>{
     console.log(props.staffCol);
     return(
         <div>
-            <StaffDetails/>
+            {props.staffCol.map(person => <StaffDetails key={person._id} details={person}/>)}
         </div>
     );
 };
 
 export default createContainer(() =>{
-    Meteor.subscribe('staffCol' );
+    Meteor.subscribe('staffCol' , 20);
     return { staffCol:  StaffCol.find({}).fetch() };
 },StaffList);
