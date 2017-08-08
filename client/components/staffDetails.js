@@ -1,12 +1,17 @@
 import React from 'react';
 
-const StaffDetails = ({ details }) => {
+const StaffDetails = ({details}) => {
     console.log(details);
-    const {name, email, phone , avatar} = details;
+    const {name, email, phone, avatar} = details;
 
-    return(
-        <div>
-            {name}
+    return (
+        <div className="thumbnail">
+            <div>
+                <img src={avatar}/>
+            </div>
+            <h3>
+                {name}
+            </h3>
         </div>
     )
 };
