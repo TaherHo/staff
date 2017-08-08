@@ -13,6 +13,6 @@ Meteor.startup(() => {
         });
     }
 
-
+    Meteor.publish('staffCol', () => StaffCol.find({}, {limit:20}));
 });
 
