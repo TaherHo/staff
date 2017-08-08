@@ -6,12 +6,17 @@ const StaffDetails = ({details}) => {
 
     return (
         <div className="thumbnail">
-            <div>
-                <img src={avatar}/>
-            </div>
-            <h3>
+            <img src={avatar}/>
+            <div className="caption">
+
+            <h4>
                 {name}
-            </h3>
+            </h4>
+            </div>
+            <ul className="list-group">
+                <li className="list-group-item">Email: {email}</li>
+                <li className="list-group-item">Phone:{phone}</li>
+            </ul>
         </div>
     )
 };

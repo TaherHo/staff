@@ -6,7 +6,7 @@ import {StaffCol} from '../../imports/collections/staffCol';
 const StaffList = (props) =>{
     console.log(props.staffCol);
     return(
-        <div>
+        <div className="staff-list">
             {props.staffCol.map(person => <StaffDetails key={person._id} details={person}/>)}
         </div>
     );
